@@ -13,14 +13,16 @@
               Sawit Rover <br />
               &amp; Drone
             </div>
-            <p class="wellcome-to-our">
-              Welcome to our innovative platform: &#34;SRED#34;. We present you with a cutting-edge solution for efficient and secure monitoring and data recording from drones and rovers, utilizing blockchain technology.
+            <p class="welcome-to-our">
+              Welcome to our innovative platform: &#34;SRED&#34;. We present you with a cutting-edge solution for
+              efficient and secure monitoring and data recording from drones and rovers, utilizing blockchain
+              technology.
             </p>
           </div>
         </div>
       </div>
       <DivWrapper
-        LOGOSred="LOGO-SRED-1-2-2.png"
+        LOGOSred="LOGO-SRED-1-2.png"
         class="frame-52"
         frameWrapperFrameClassName="design-component-instance-node"
         frameWrapperFrameClassNameOverride="frame-6"
@@ -51,20 +53,20 @@
           </div>
         </div>
       </div>
-      <div class="group-3"
+      <div class="group-3">
         <div class="rectangle" />
         <div class="rectangle-2" />
       </div>
       <img class="illustration" alt="Illustration" src="illustration.svg" />
       <div class="frame-8">
-        <div class="tect-wrapper-2"Get Product< /div>
-        <image class="vector-5" alt="Vector" src="vector-7.svg" />
+        <div class="text-wrapper-2">Get Product</div>
+        <img class="vector-5" alt="Vector" src="vector-7.svg" />
       </div>
       <div class="frame-9">
         <div class="frame-10">
-          <image class="ellipse" alt="Ellipse" src="ellipse.png" />
-          <image class="ellipse-2" alt="Ellipse" src="ellipse.png" />
-          <image class="ellipse-3" alt="Ellipse" src="ellipse.png-2" />
+          <img class="ellipse" alt="Ellipse" src="ellipse.svg" />
+          <img class="ellipse-2" alt="Ellipse" src="ellipse.png" />
+          <img class="ellipse-3" alt="Ellipse" src="image.png" />
         </div>
         <div class="frame-11">
           <div class="text-wrapper-3">1100+</div>
@@ -76,13 +78,15 @@
 </template>
 
 <script>
-import { DivWrapper } from "./DivWrapper;
+import { defineProps } from "vue";
+import { DivWrapper } from "./DivWrapper";
 
 export default {
   name: "Desktop",
-  component: {
-   DivWrapper,
+  components: {
+    DivWrapper,
   },
+  props: defineProps({}),
 };
 </script>
 
@@ -92,14 +96,14 @@ export default {
   height: 800px;
   mix-blend-mode: darken;
   overflow: hidden;
-  widht: 1280px;
+  width: 1280px;
 }
 
 .desktop .overlap-group {
   height: 800px;
   left: -48px;
   position: relative;
-  widht: 1328px;
+  width: 1328px;
 }
 
 .desktop .vector {
@@ -107,51 +111,322 @@ export default {
   left: 48px;
   position: absolute;
   top: 0;
-  widht: 1328px;
+  width: 927px;
 }
 
 .desktop .img {
   height: 647px;
   left: 48px;
-  position:absolute;
+  position: absolute;
   top: 0;
-  widht: 1067px;
+  width: 1067px;
 }
 
 .desktop .vector-2 {
   height: 620px;
   left: 48px;
-  position:absolute;
+  position: absolute;
   top: 0;
-  widht: 1280px;
+  width: 1280px;
 }
 
 .desktop .vector-3 {
   height: 800px;
   left: 48px;
-  position:absolute;
+  position: absolute;
   top: 0;
-  widht: 1280px;
+  width: 1280px;
 }
 
 .desktop .vector-4 {
   height: 800px;
   left: 521px;
-  position:absolute;
+  position: absolute;
   top: 0;
-  widht: 807px;
+  width: 807px;
 }
 
 .desktop .mockup {
   height: 286px;
   left: 131px;
-  position:absolute;
-  top: 137;
-  widht: 640px;
+  position: absolute;
+  top: 137px;
+  width: 640px;
 }
 
 .desktop .group {
   height: 286px;
 }
 
+.desktop .group-2 {
+  height: 286px;
+  position: relative;
+  width: 644px;
+}
+
+.desktop .sawit-rover-drone {
+  color: var(--shade-4);
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 1px;
+  line-height: 70px;
+  position: absolute;
+  top: 0;
+}
+
+.desktop .welcome-to-our {
+  color: var(--neutral-black);
+  font-family: var(--main-text-font-family);
+  font-size: var(--main-text-font-size);
+  font-style: var(--main-text-font-style);
+  font-weight: var(--main-text-font-weight);
+  left: 4px;
+  letter-spacing: var(--main-text-letter-spacing);
+  line-height: var(--main-text-line-height);
+  position: absolute;
+  top: 176px;
+  width: 636px;
+}
+
+.desktop .frame-52 {
+  display: flex !important;
+  height: 61px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 1328px !important;
+}
+
+.desktop .frame-52-instance {
+  color: var(--shade-4) !important;
+  font-size: 14px !important;
+  margin-bottom: -4.5px !important;
+  margin-left: -12.5px !important;
+  margin-right: -12.5px !important;
+  margin-top: -6.5px !important;
+}
+
+.desktop .design-component-instance-node {
+  margin-bottom: -10px !important;
+  margin-top: -10px !important;
+  padding: 10px 0px 10px 80px !important;
+}
+
+.desktop .frame-5 {
+  background-color: var(--shade-4) !important;
+  border-radius: 5px !important;
+  display: flex !important;
+  height: 30px !important;
+  width: 68px !important;
+}
+
+.desktop .frame-6 {
+  margin-bottom: -4px !important;
+  padding: 10px 80px 10px 700px !important;
+}
+
+.desktop .frame-7 {
+  margin-left: -25px !important;
+  margin-right: -25px !important;
+  padding: 0px 0px 0px 350px !important;
+}
+
+.desktop .heading-name-wrapper {
+  height: 24px;
+  left: 370px;
+  position: absolute;
+  top: 20px;
+  width: 588px;
+}
+
+.desktop .heading-name {
+  align-items: center;
+  display: inline-flex;
+  gap: 50px;
+  justify-content: center;
+  position: relative;
+}
+
+.desktop .label-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.desktop .label {
+  color: var(--text-gray-900);
+  font-family: var(--body-medium-body-2-font-family);
+  font-size: var(--body-medium-body-2-font-size);
+  font-style: var(--body-medium-body-2-font-style);
+  font-weight: var(--body-medium-body-2-font-weight);
+  letter-spacing: var(--body-medium-body-2-letter-spacing);
+  line-height: var(--body-medium-body-2-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop .label-2 {
+  color: var(--text-gray-900);
+  font-family: var(--body-regular-body-2-font-family);
+  font-size: var(--body-regular-body-2-font-size);
+  font-style: var(--body-regular-body-2-font-style);
+  font-weight: var(--body-regular-body-2-font-weight);
+  letter-spacing: var(--body-regular-body-2-letter-spacing);
+  line-height: var(--body-regular-body-2-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop .group-3 {
+  height: 2px;
+  left: 372px;
+  position: absolute;
+  top: 43px;
+  width: 30px;
+}
+
+.desktop .rectangle {
+  background-color: var(--shade-2);
+  height: 2px;
+  left: 26px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.desktop .rectangle-2 {
+  background-color: var(--shade-4);
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.desktop .illustration {
+  height: 483px;
+  left: 863px;
+  position: absolute;
+  top: 140px;
+  width: 432px;
+}
+
+.desktop .frame-8 {
+  align-items: center;
+  background-color: var(--shade-4);
+  border-radius: 64px;
+  display: inline-flex;
+  gap: 16px;
+  left: 128px;
+  padding: 16px 32px;
+  position: absolute;
+  top: 516px;
+}
+
+.desktop .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "M PLUS 1-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop .vector-5 {
+  height: 18.5px;
+  margin-right: -1px;
+  position: relative;
+  width: 24.5px;
+}
+
+.desktop .frame-9 {
+  align-items: center;
+  display: inline-flex;
+  gap: 16px;
+  left: 140px;
+  position: absolute;
+  top: 595px;
+}
+
+.desktop .frame-10 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.desktop .ellipse {
+  height: 50px;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-top: -1px;
+  object-fit: cover;
+  position: relative;
+  width: 50px;
+}
+
+.desktop .ellipse-2 {
+  height: 50px;
+  margin-bottom: -1px;
+  margin-left: -12px;
+  margin-top: -1px;
+  object-fit: cover;
+  position: relative;
+  width: 50px;
+}
+
+.desktop .ellipse-3 {
+  height: 50px;
+  margin-bottom: -1px;
+  margin-left: -12px;
+  margin-right: -1px;
+  margin-top: -1px;
+  object-fit: cover;
+  position: relative;
+  width: 50px;
+}
+
+.desktop .frame-11 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.desktop .text-wrapper-3 {
+  color: var(--shade-4);
+  font-family: "M PLUS 1-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop .p {
+  color: var(--neutral-black);
+  font-family: "M PLUS 1-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: relative;
+  width: 177px;
+}
 </style>
