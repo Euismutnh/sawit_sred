@@ -4,17 +4,17 @@
       <div class="overlap-group">
         <div class="backgrund">
           <div class="overlap-group-2">
-            <img class="vector" alt="Vector" src="@/assets/vector-5.svg" />
-            <img class="img" alt="Vector" src="@/assets/vector-4.svg" />
-            <img class="vector-2" alt="Vector" src="@/assets/vector-3.svg" />
-            <img class="vector-3" alt="Vector" src="@/assets/vector-2.svg" />
-            <img class="vector-4" alt="Vector" src="@/assets/vector-1.svg" />
+            <img class="vector" alt="Vector" src="@/assets/vector-5.png" />
+            <img class="img" alt="Vector" src="@/assets/vector-4.png" />
+            <img class="vector-2" alt="Vector" src="@/assets/vector-3.png" />
+            <img class="vector-3" alt="Vector" src="@/assets/vector-2.png" />
+            <img class="vector-4" alt="Vector" src="@/assets/vector-1.png" />
           </div>
         </div>
         <header class="header">
           <div class="overlap-2">
             <DivWrapper
-              LOGOSred="@/src/assets/LOGO-SRED.svg"
+              LOGOSred="@/src/assets/LOGO.png"
               class="frame-52"
               frameWrapperDivClassName="frame-6"
               frameWrapperFrameClassName="frame-52-instance"
@@ -55,7 +55,7 @@
             </div>
           </div>
         </header>
-        <img class="illustration" alt="Illustration" src="@/assets/illustration.svg" />
+        <img class="illustration" alt="Illustration" src="@/assets/illustration.png" />
       </div>
       <div class="typography">
         <div class="mockup">
@@ -76,13 +76,13 @@
       </div>
       <div class="product">
         <div class="text-wrapper-2">Get Product</div>
-        <img class="vector-5" alt="Vector" src="vector-7.svg" />
+        <img class="vector-5" alt="Vector" src="vector-7.png" />
       </div>
       <div class="frame-8">
         <div class="frame-9">
-          <img class="ellipse" alt="Ellipse" src="@/assets/ellipse-1.svg" />
-          <img class="ellipse-2" alt="Ellipse" src="@/assets/ellipse-2.svg" />
-          <img class="ellipse-3" alt="Ellipse" src="@/assets/ellipse-3.svg" />
+          <img class="ellipse" alt="Ellipse" src="@/assets/ellipse-1.png" />
+          <img class="ellipse-2" alt="Ellipse" src="@/assets/ellipse-2.png" />
+          <img class="ellipse-3" alt="Ellipse" src="@/assets/ellipse-3.png" />
         </div>
         <div class="frame-10">
           <div class="text-wrapper-3">1100+</div>
