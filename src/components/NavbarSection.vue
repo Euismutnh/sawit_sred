@@ -1,9 +1,7 @@
-
-Navbar.vue:
 <template>
   <header class="header">
     <div class="header-content">
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8519afd9f021c8ec40866c1f010971a65b5969685483dae85110d3ff9bb736bf?apiKey=d08c69475cff4af781c6577a73a4ec26&" alt="Company Logo" class="logo" />" alt="Company Logo" class="logo" />
+      <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774654/LOGO_ixtg0z.png" alt="Company Logo" class="logo" />" alt="Company Logo" class="logo" />
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
