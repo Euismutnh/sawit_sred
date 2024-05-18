@@ -10,9 +10,11 @@
             cutting-edge solution for efficient and secure monitoring and data
             recording from drones and rovers, utilizing blockchain technology.
           </p>
+          <div class="container">
           <div class="hero-cta">
             <button class="cta-btn">Get Product</button>
             <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774653/Vector_7_zwhkq8.png" alt="Arrow Icon" class="arrow-icon" />
+          </div>
           </div>
           <div class="hero-stats">
             <img
@@ -283,10 +285,12 @@ export default {
 }
 
 .main-content {
-  align-self: center;
+  mix-blend-mode: darken;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 1167px;
-  margin: 80px 0 39px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 991px) {
@@ -297,8 +301,10 @@ export default {
 }
 
 .hero-section {
-  gap: 20px;
   display: flex;
+  gap: 20px;
+  max-width: 1167px;
+  margin: 80px auto 39px;
 }
 
 @media (max-width: 991px) {
@@ -309,9 +315,8 @@ export default {
   }
 .hero-content {
   display: flex;
-  margin-top: 12px;
-  flex-grow: 1;
   flex-direction: column;
+  width: 60%;
 }
 }
 
@@ -324,8 +329,14 @@ export default {
 
 .hero-title {
   color: var(--shade-4, #1b5e1f);
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 50px;
+  font-weight: 600;
+  left: 0;
   letter-spacing: 1px;
-  font: 600 50px/70px Inter, sans-serif;
+  line-height: 70px;
+  position: absolute;
+  top: 0;
 }
 
 @media (max-width: 991px) {
@@ -337,9 +348,17 @@ export default {
 }
 
 .hero-description {
-  color: var(--Neutral-black, #263238);
-  margin-top: 61px;
-  font: 300 20px/36px Poppins, sans-serif;
+  color: var(--neutral-black);
+  font-family: var(--main-text-font-family);
+  font-size: var(--main-text-font-size);
+  font-style: var(--main-text-font-style);
+  font-weight: var(--main-text-font-weight);
+  left: 4px;
+  letter-spacing: var(--main-text-letter-spacing);
+  line-height: var(--main-text-line-height);
+  position: absolute;
+  top: 176px;
+  width: 636px;
 }
 
 @media (max-width: 991px) {
@@ -349,18 +368,24 @@ export default {
   }
 }
 
+.container {
+  display: flex;
+}
+
+/* Elemen .hero-cta */
 .hero-cta {
   border-radius: 64px;
   background-color: var(--shade-4, #1b5e1f);
-  align-self: start;
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   margin-top: 65px;
   gap: 16px;
   font-size: 16px;
   color: #fff;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 1.5;
   padding: 16px 32px;
+  justify-content: flex-start; /* Menempatkan elemen ke sebelah kiri */
 }
 
 @media (max-width: 991px) {
@@ -371,19 +396,19 @@ export default {
 }
 
 .cta-btn {
-  font-family: M PLUS 1, sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
 }
 
 .arrow-icon {
   aspect-ratio: 1.43;
-  object-fit: auto;
-  object-position: center;
+  object-fit: cover;
   width: 23px;
-  stroke-width: 2px;
-  stroke: #eff8f0;
-  border-color: rgba(239, 248, 240, 1);
-  border-style: solid;
-  border-width: 2px;
   margin: auto 0;
 }
 

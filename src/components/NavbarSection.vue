@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-content">
-      <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774654/LOGO_ixtg0z.png" alt="Company Logo" class="logo" />" alt="Company Logo" class="logo" />
+      <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774654/LOGO_ixtg0z.png"  alt="Company Logo" class="logo" />
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">

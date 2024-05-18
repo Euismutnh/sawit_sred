@@ -1,9 +1,12 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/HomePage.vue';
-
-
-Vue.use(VueRouter);
+import ServicePage from '../views/ServicePage.vue';
+import FeaturePage from '../views/FeaturePage.vue';
+import ProductPage from '../views/ProductPage.vue';
+import TestimonialPage from '../views/TestimonialPage.vue';
+import FAQPage from '../views/FAQ.vue';
+import SignUpPage from '../views/SignUp.vue';
+import LoginPage from '../views/LoginPage.vue';
 
 const routes = [
   {
@@ -14,43 +17,42 @@ const routes = [
   {
     path: '/service',
     name: 'Service',
-    component: () => import('../views/ServicePage.vue'),
+    component: ServicePage,
   },
   {
     path: '/feature',
     name: 'Feature',
-    component: () => import('../views/FeaturePage.vue'),
+    component: FeaturePage,
   },
   {
     path: '/product',
     name: 'Product',
-    component: () => import('../views/ProductPage.vue'),
+    component: ProductPage,
   },
   {
     path: '/testimonial',
     name: 'Testimonial',
-    component: () => import('../views/TestimonialPage.vue'),
+    component: TestimonialPage,
   },
   {
     path: '/faq',
     name: 'FAQ',
-    component: () => import('../views/FAQ.vue'),
+    component: FAQPage,
   },
   {
     path: '/signup',
     name: 'SignUp',
-    component: () => import('../views/SignUp.vue'),
+    component: SignUpPage,
   },
   {
     path: '/login',
     name: 'Login',
-    component: () => import('../views/LoginPage.vue'),
+    component: LoginPage,
   },
 ];
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
