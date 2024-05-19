@@ -1,71 +1,76 @@
 <template>
-  <div class="landing-page">
-    <NavbarSection />
-    <main class="main-content">
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1 class="hero-title">Sawit Rover <br /> & Drone</h1>
-          <p class="hero-description">
-            Welcome to our innovative platform: "SRED". We present you with a
-            cutting-edge solution for efficient and secure monitoring and data
-            recording from drones and rovers, utilizing blockchain technology.
-          </p>
-          <div class="container">
-          <div class="hero-cta">
-            <button class="cta-btn">Get Product</button>
-            <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774653/Vector_7_zwhkq8.png" alt="Arrow Icon" class="arrow-icon" />
-          </div>
-          </div>
-          <div class="hero-stats">
-            <img
-              src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715926314/user_icon_fuuu6c.png"
-              alt="Active Users Icon"
-              class="users-icon"
-            />
-            <div class="stats-info">
-              <span class="users-count">1100+</span>
-              <span class="users-text">Active users around the world</span>
-            </div>
+ <div class="landing-page">
+  <NavbarSection />
+  <main class="main-content">
+    <section class="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-title">
+          Sawit Rover <br /> 
+          &amp; Drone
+        </h1>
+        <p class="hero-description">
+          Welcome to our innovative platform: "SRED". We present you with a
+          cutting-edge solution for efficient and secure monitoring and data
+          recording from drones and rovers, utilizing blockchain technology.
+        </p>
+        <div class="hero-cta">
+          <button class="cta-btn">Get Product</button>
+          <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774653/Vector_7_zwhkq8.png" alt="Arrow Icon" class="arrow-icon" />
+        </div>
+        <div class="hero-stats">
+          <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715926314/user_icon_fuuu6c.png" alt="Active Users Icon" class="users-icon" />
+          <div class="stats-info">
+            <span class="users-count">1100+</span>
+            <span class="users-text">Active users around the world</span>
           </div>
         </div>
-        <div class="hero-image">
-          <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774653/Illustration_xrarrl.png" alt="Hero Image" class="hero-img" />
-        </div>
-      </section>
+      </div>
+      <div class="hero-image">
+        <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774653/Illustration_xrarrl.png" alt="Hero Image" class="hero-img" />
+      </div>
+    </section>
       <section class="community-section">
+        <div class="label">
         <h2 class="section-title">Palm Oil Community Information</h2>
+        </div>
         <div class="community-cards">
           <div class="card">
+            <div class="member">
             <img
               src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774741/Icon_1_mmmgz1.png"
               alt="Membership Organisations Icon"
               class="card-icon"
             />
             <h3 class="card-title">Membership Organisations</h3>
+            </div>
             <p class="card-description">
               Palm oil company organizations existing in various countries, to
               support the global palm oil demand.
             </p>
           </div>
           <div class="card">
+            <div class="member">
             <img
               src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774741/Icon_4_jzwexy.png"
               alt="National Associations Icon"
               class="card-icon"
             />
             <h3 class="card-title">National Associations</h3>
+            </div>
             <p class="card-description">
               Palm oil company organizations existing in various countries, to
               support the global palm oil demand.
             </p>
           </div>
           <div class="card">
+            <div class="member">
             <img
               src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774741/Icon_5_dvfsnk.png"
               alt="Clubs And Groups Icon"
               class="card-icon"
             />
             <h3 class="card-title">Clubs And Groups</h3>
+            </div>
             <p class="card-description">
               Groups of palm oil companies that exist in response to global palm
               oil issues.
@@ -77,7 +82,7 @@
         <div class="health-content">
           <div class="health-image">
             <img
-              src="hhttps://res.cloudinary.com/dgcpujd5s/image/upload/v1715775003/pana_qdc40x.png"
+              src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715775003/pana_qdc40x.png"
               alt="Oil Palm Plants Health"
               class="health-img"
             />
@@ -174,7 +179,9 @@
         </div>
       </section>
       <section class="cta-section">
+        <div class="label-2">
         <h2 class="cta-title">Get Our Rover & Drone Products Now</h2>
+        </div>
         <button class="demo-btn">
           Get a Demo
           <img src="https://res.cloudinary.com/dgcpujd5s/image/upload/v1715774653/Vector_7_zwhkq8.png" alt="Arrow Icon" class="arrow-icon" />
@@ -278,53 +285,45 @@ export default {
 
 <style scoped>
 .landing-page {
-  background-color: var(--Neutral-silver-white, #f5f7fa);
+  position: relative; 
+  display: flex;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 1440px; /* Mengatur lebar maksimum */
+  margin: 0 auto; /* Memposisikan halaman di tengah */
 }
 
 .main-content {
-  mix-blend-mode: darken;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   padding-bottom: 80px;
 }
 
-@media (max-width: 991px) {
-  .main-content {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
 .hero-section {
+  background-color: #ffffff;
+  height: 800px;
+  mix-blend-mode: darken;
   display: flex;
-  gap: 20px;
-  max-width: 1167px;
-  margin: 80px auto 39px;
+  justify-content: flex-start; /* Rata kiri */
+  align-items: center; /* Pusatkan secara vertikal */
+  width: 100%;
+  margin-top: 39px; 
+  margin-bottom: 71px /* Sesuaikan dengan kebutuhan Anda */
 }
 
 @media (max-width: 991px) {
   .hero-section {
     flex-direction: column;
     align-items: stretch;
-    gap: 0px;
   }
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-}
 }
 
-@media (max-width: 991px) {
-  .hero-content {
-    max-width: 100%;
-    margin-top: 40px;
-  }
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 78px; /* Sesuaikan jarak kiri */
+  align-items: flex-start; /* Atur agar konten rata kiri */
 }
 
 .hero-title {
@@ -332,47 +331,18 @@ export default {
   font-family: "Inter-SemiBold", Helvetica;
   font-size: 50px;
   font-weight: 600;
-  left: 0;
   letter-spacing: 1px;
   line-height: 70px;
-  position: absolute;
-  top: 0;
-}
-
-@media (max-width: 991px) {
-  .hero-title {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 62px;
-  }
+  width: fit-content;
 }
 
 .hero-description {
-  color: var(--neutral-black);
-  font-family: var(--main-text-font-family);
-  font-size: var(--main-text-font-size);
-  font-style: var(--main-text-font-style);
-  font-weight: var(--main-text-font-weight);
-  left: 4px;
-  letter-spacing: var(--main-text-letter-spacing);
-  line-height: var(--main-text-line-height);
-  position: absolute;
-  top: 176px;
-  width: 636px;
+  color: var(--Neutral-black);
+  font-size: 20px;
+  font-weight: 300;
+  width: 636px; /* Sesuaikan lebar sesuai kebutuhan */
 }
 
-@media (max-width: 991px) {
-  .hero-description {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
-.container {
-  display: flex;
-}
-
-/* Elemen .hero-cta */
 .hero-cta {
   border-radius: 64px;
   background-color: var(--shade-4, #1b5e1f);
@@ -413,25 +383,13 @@ export default {
 }
 
 .hero-stats {
-  align-self: start;
   display: flex;
   gap: 16px;
-  margin: 23px 0 0 12px;
-}
-
-@media (max-width: 991px) {
-  .hero-stats {
-    margin-left: 10px;
-  }
+  margin-top: 23px;
 }
 
 .users-icon {
-  aspect-ratio: 2.5;
-  object-fit: auto;
-  object-position: center;
   width: 120px;
-  max-width: 100%;
-  margin: auto 0;
 }
 
 .stats-info {
@@ -441,18 +399,17 @@ export default {
 
 .users-count {
   color: var(--shade-4, #1b5e1f);
-  font: 700 16px/150% M PLUS 1, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .users-text {
   color: var(--Neutral-black, #263238);
-  font: 400 12px/16px M PLUS 1, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .hero-image {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
   width: 40%;
   margin-left: 20px;
 }
@@ -460,33 +417,20 @@ export default {
 @media (max-width: 991px) {
   .hero-image {
     width: 100%;
-  }
-}
-
-.hero-img {
-  aspect-ratio: 0.89;
-  object-fit: auto;
-  object-position: center;
-  width: 100%;
-}
-
-@media (max-width: 991px) {
-  .hero-img {
-    max-width: 100%;
     margin-top: 40px;
+    margin-left: 0; /* Setel margin kiri ke 0 untuk responsif */
   }
 }
+
 
 .community-section {
+ 
+  background-color: #ffffff;
+  height: 450px;
   mix-blend-mode: multiply;
-  background-color: #fff;
-  z-index: 10;
-  display: flex;
-  margin-top: -23px;
-  width: 100%;
-  max-width: 1180px;
-  flex-direction: column;
-  padding: 8px 20px 71px;
+  overflow: hidden;
+  width: 1180;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -495,17 +439,36 @@ export default {
   }
 }
 
+.label {
+  height: 99px;
+  width: 483px;
+  display: inline-flex;
+}
 .section-title {
   color: var(--Neutral-black, #263238);
+  font-family: "Quicksand-SemiBold", Helvetica;
+  font-size: 38px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  position: fixed;
   text-align: center;
-  align-self: center;
-  font: 600 38px/44px Quicksand, sans-serif;
+  top: 0;
+  width: 483px;
 }
 
 .community-cards {
+  align-items: center;
+  display: flex;
   justify-content: space-between;
+  left: -130px;
   margin-top: 39px;
-  padding: 0 14px;
+  padding: 0px 144px;
+  position: absolute;
+  top: 119px;
+  width: 1440px;
+  margin-bottom: 71px; 
 }
 
 @media (max-width: 991px) {
@@ -515,21 +478,35 @@ export default {
 }
 
 .card {
+  align-items: center;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+  box-shadow: 0px 2px 4px #abbed133;
   background-color: var(--Neutral-White, #fff);
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
-  padding: 24px 16px;
+  gap: 8px;
+  width: 299px;
+  position: relative;
+  padding: 24px 32px;
+  
 }
 
 @media (max-width: 991px) {
   .card {
     margin-top: 40px;
   }
+}
+
+.member{
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  position: relative;
+  width: 267px;
 }
 
 .card-icon {
@@ -553,12 +530,21 @@ export default {
 }
 
 .health-section {
+  align-items: center;
+  display: flex;
   border-radius: 8px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
   background-color: var(--tint-5, #e8f5e9);
+  overflow: hidden;
+  position: relative;
   width: 1210px;
+  height: 476px;
   max-width: 100%;
   padding: 40px 65px 3px;
+  flex-direction: column;
 }
 
 @media (max-width: 991px) {
@@ -648,6 +634,7 @@ export default {
 .learn-more-btn {
   justify-content: center;
   border-radius: 4px;
+  border: #4caf4f;
   background-color: var(--Brand-Primary, #4caf4f);
   align-self: start;
   margin-top: 44px;
@@ -666,14 +653,34 @@ export default {
 
 .features-section {
   margin-top: 37px;
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+}
+
+.section-title{
+  color: var(--Neutral-black);
+  font-family: "M Plus 1-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
 }
 
 .features-grid {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 32px;
   justify-content: center;
-  margin-top: 64px;
-  width: 100%;
-  max-width: 1252px;
   padding: 10px 6px;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -684,13 +691,15 @@ export default {
 }
 
 .feature-card {
+  align-items: flex-start;
+  background-color: #ffffff03;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
-  background-color: rgba(255, 255, 255, 0.01);
+  box-shadow: 0px 2px 4px #abbed133;
   display: flex;
   flex-grow: 1;
-  gap: 20px;
-  width: 100%;
+  gap: 24px;
+  width: 392px;
+  position: relative;
   padding: 10px 6px;
 }
 
@@ -713,27 +722,43 @@ export default {
 }
 
 .icon {
-  aspect-ratio: 1;
-  object-fit: auto;
-  object-position: center;
-  width: 32px;
+  flex: 0 0 auto;
+  position: relative;
 }
 
 .feature-info {
+  align-items: flex-start;
   display: flex;
-  padding-right: 6px;
   flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  gap: 0px;
   color: var(--Neutral-black, #263238);
   flex: 1;
 }
 
 .feature-title {
-  font: 500 24px M PLUS 1, sans-serif;
+  color: var(--Neutral-black);
+  font-family: "M PLUS 1-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
 }
 
 .feature-description {
-  margin-top: 8px;
-  font: 400 16px M PLUS 1, sans-serif;
+  color: #263238;
+  font-family: "M PLUS 1-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 286px;
 }
 
 .rover-section {
@@ -833,8 +858,17 @@ export default {
 
 .cta-section {
   text-align: center;
+  height: 300px;
+  position: relative;
+  width: 1280;
+  padding: 49px;
 }
 
+.label-2{
+  height: 138px;
+  width: 883px;
+   display: inline-flex;
+}
 .cta-title {
   color: var(--Neutral-black, #263238);
   margin-top: 87px;
@@ -850,8 +884,13 @@ export default {
 }
 
 .demo-btn {
+  
   justify-content: center;
   border-radius: 4px;
+  border: none;
+  left: 625px;
+  top: 260px;
+  position: absolute;
   background-color: var(--Brand-Primary, #4caf4f);
   display: flex;
   margin-top: 65px;
@@ -872,27 +911,19 @@ export default {
 }
 
 .footer {
+  -webkit-backdrop-filter: blur(16px) brightness(100%);
+  backdrop-filter: blur(16px) brightness(100%);
   background: linear-gradient(
     227deg,
     rgba(76, 175, 79, 0.8) 25.73%,
     rgba(76, 175, 104, 0.32) 76.27%
   );
-  backdrop-filter: blur(8px);
-  align-self: stretch;
-  display: flex;
-  margin-top: 114px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 60px;
+  background-color: rgba(255,255,255, 1);
+  height: 371px;
+  position: relative;
+  width: 1440px;
 }
 
-@media (max-width: 991px) {
-  .footer {
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-}
 
 .footer-content {
   margin-bottom: 5px;
